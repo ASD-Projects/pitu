@@ -1695,21 +1695,21 @@ void handle_command(char* cmd) {
 
     if (strcmp(command, "version") == 0) {
         #ifdef ARCH_64
-        terminal_writestring("Pitu Basic Kernel v1.0.0 (x86_64 Edition)\n");
+        terminal_writestring("Pitu Basic Kernel v0.2.2-dev (x86_64 Edition)\n");
         #else
         if (current_arch == ARCH_X86_64) {
-            terminal_writestring("Pitu Basic Kernel v1.0.0 (x86_64 Mode)\n");
+            terminal_writestring("Pitu Basic Kernel v0.2.2-dev (x86_64 Mode)\n");
         } else {
-            terminal_writestring("Pitu Basic Kernel v1.0.0 (x86 Mode)\n");
+            terminal_writestring("Pitu Basic Kernel v0.2.2-dev (x86 Mode)\n");
         }
         #endif
     }
     else if (strcmp(command, "about") == 0) {
         terminal_writestring("=== Pitu Basic Kernel ===\n");
         #ifdef ARCH_64
-        terminal_writestring("Version: 1.0.0 (x86_64 Edition)\n");
+        terminal_writestring("Version: 0.2.2-dev (x86_64 Edition)\n");
         #else
-        terminal_writestring("Version: 1.0.0 (Dual Architecture Edition)\n");
+        terminal_writestring("Version: 0.2.2-dev (Dual Architecture Edition)\n");
         #endif
         terminal_writestring("Build Date: May 5, 2025\n");
         terminal_writestring("Developer: AnmiTaliDev\n");
